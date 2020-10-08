@@ -1,0 +1,15 @@
+$text-color: #515151;
+$orange: #FF7A00;
+$grey: #888888;
+$button-gradient: linear-gradient(99.79deg, #FF9900, #FFE600, #FF9900);
+$img-radius: 15px;
+$title-size: 90px;
+$text-size: 18px;
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

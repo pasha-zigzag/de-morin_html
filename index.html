@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header header-front">
+        <div class="mobile__menu">
+            <div class="navbar__lang">
+                <div class="lang-box">
+                    <div class="lang-box__current">
+                        Rus
+                    </div>
+                    <div class="lang-box__dropdown">
+                        <a class="lang-box__link" href="#">
+                            Eng
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__item-link" href="#">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__item-link" href="#">
+                            О Дё Морин
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__item-link" href="services.html">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__item-link" href="news.html">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__item-link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="navbar__phone-block">
+                <div class="navbar__phone">
+                    <a class="navbar__phone-link" href="tel:+79622212668">
+                        +7 (962) 221-26-68
+                    </a>
+                </div>
+                <div class="navbar__recall">
+                    <a class="navbar__recall-link" href="#">
+                        Заказать звонок
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__inner">
+            <div class="container">
+                <div class="navbar  navbar--header">
+                    <div class="navbar__logo">
+                        <a class="navbar__logo-link" href="/">
+                            <img class="navbar__logo-img" src="img/logo.png" alt="logo">
+                            <div class="navbar__logo-text">
+                                Туристическая база Дё Морин
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="navbar__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="/">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    О Дё Морин
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="services.html">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="news.html">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="navbar__lang">
+                        <div class="lang-box">
+                            <div class="lang-box__current">
+                                Rus
+                            </div>
+                            <div class="lang-box__dropdown">
+                                <a class="lang-box__link" href="#">
+                                    Eng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar__phone-block">
+                        <div class="navbar__phone">
+                            <a class="navbar__phone-link" href="tel:+79622212668">
+                                +7 (962) 221-26-68
+                            </a>
+                        </div>
+                        <div class="navbar__recall">
+                            <a class="navbar__recall-link" href="#">
+                                Заказать звонок
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- @@include('parts/header.html') -->
+
+                <div class="header__content">
+                    <h2 class="title">
+                        Наедине с природой
+                    </h2>
+                    <div class="header__content-text">
+                        Уютные домики с панорамными окнами и сказочный вид на берёзовую рощу погрузят вас в
+                        атмосферу чистоты, спокойствия и свободы
+                    </div>
+
+                    <div class="header__content-buttons">
+
+                        <a class="booking-btn" href="#">
+                            Забронировать домик
+                        </a>
+
+                        <a class="video-btn header__video-btn" href="/img/demorin.mp4" data-fancybox></a>
+
+                    </div>
+                </div>
+
+                <div class="header__location map-hover__wrap">
+                    <span class="link-map">Хабаровский край</span>
+                    <div id="map-hover" class="map-hover"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="demorin-rest page-section">
+        <div class="container">
+            <h1 class="title text-center">
+                Отдых в “Дё Морин”
+            </h1>
+            <div class="demorin-rest__inner">
+                <div class="demorin-rest__video-block">
+                    <video id="demorin-rest__video" class="demorin-rest__video" poster="img/video-preview.jpg"
+                        preload="none">
+                        <source src="img/demorin.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="video-btn demorin-rest__video-btn"></div>
+                </div>
+                <div class="demorin-rest__content">
+                    <h3 class="subtitle">
+                        Устал от городской суеты?
+                    </h3>
+                    <div class="demorin-rest__text">
+                        Туристический комплекс “Дё Морин” поможет вам отдохнуть от шумного города в комфортных
+                        условиях:
+                        расслабиться, хорошо провести время и почувствовать единение с природой.
+                    </div>
+                    <div class="demorin-rest__items">
+                        <div class="demorin-rest__item">
+                            <img class="demorin-rest__item-img" src="img/park-ico.svg" alt="">
+                            <div class="demorin-rest__item-title">
+                                Комфортный отдых прямо в лесу
+                            </div>
+                            <div class="demorin-rest__item-text">
+                                В домах есть все условия: теплые полы, канализия, электричество и др.
+                            </div>
+                        </div>
+                        <div class="demorin-rest__item">
+                            <img class="demorin-rest__item-img" src="img/hills-ico.svg" alt="">
+                            <div class="demorin-rest__item-title">
+                                Работаем круглый год
+                            </div>
+                            <div class="demorin-rest__item-text">
+                                Мы готовим из местных экологически чистых, натуральных продуктов.
+                            </div>
+                        </div>
+                        <div class="demorin-rest__item">
+                            <img class="demorin-rest__item-img" src="img/rafting-ico.svg" alt="">
+                            <div class="demorin-rest__item-title">
+                                Развлечения на природе
+                            </div>
+                            <div class="demorin-rest__item-text">
+                                Баня на дровах, катание на квадрациклах, прогулки на лошадиных упряжках и т.д
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="accommodations page-section">
+        <div class="accommodations__inner">
+            <div class="container">
+                <h2 class="title">
+                    Условия проживания
+                </h2>
+                <p class="accommodations__text">
+                    Туристический комплекс “Дё Морин” отлично подходит как для семейного отдыха, так и для
+                    компании
+                    отдыхающих и летом и зимой! Оригинальная конструкция домов подчеркнута 5-метровыми
+                    панорамными
+                    окнами, что позволяет наслаждаться живописной природой не выходя из дома.
+                </p>
+                <div class="accommodations__wrapper">
+                    <div class="accommodations__info">
+                        <h3 class="subtitle">
+                            Комфортабельные домики «A -frame»
+                        </h3>
+                        <ul class="accommodations__list">
+                            <li class="accommodations__list-item">
+                                - Каждый дом оснащён: тёплым полом, кондиционером, туалетной комнатой с душем.
+                            </li>
+                            <li class="accommodations__list-item">
+                                - Внутри полноценная кухонная зона с плитой, холодильником и набором необходимой
+                                посуды;
+                            </li>
+                            <li class="accommodations__list-item">
+                                - Обеденный стол, диван, качеля-кресло;
+                            </li>
+                            <li class="accommodations__list-item">
+                                - Одна полуторка на первом этаже и двухспальное место на втором этаже.
+                            </li>
+                        </ul>
+                        <div class="accommodations__price">
+                            Цена за домик: <span>от 5000 руб.</span>
+                        </div>
+                        <a class="booking-btn accommodations__booking" href="#">
+                            Забронировать домик
+                        </a>
+                    </div>
+                    <div class="accommodations__slider">
+                        <div class="accommodations__slider-item"><img src="img/accommodation-1.jpg" alt="">
+                        </div>
+                        <div class="accommodations__slider-item"><img src="img/accommodation-2.jpg" alt="">
+                        </div>
+                        <div class="accommodations__slider-item"><img src="img/accommodation-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="accommodations__slider-arr slider-nav">
+                        <div class="slider-nav__prev">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.625002 24.9988C0.625001 38.4601 11.5387 49.3738 25 49.3738C38.4613 49.3738 49.375 38.4601 49.375 24.9988C49.375 11.5375 38.4613 0.623782 25 0.623781C11.5387 0.62378 0.625003 11.5374 0.625002 24.9988ZM26.875 15.6132L19.4242 23.1238L36.9531 23.1238L36.9531 26.8738L19.4242 26.8738L26.875 34.3843L24.2137 37.0257L12.2805 24.9988L24.2148 12.9718L26.875 15.6132Z"
+                                    fill="#B9B9B9" />
+                            </svg>
+                        </div>
+                        <div class="slider-nav__next">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M49.375 25.0012C49.375 11.5399 38.4613 0.626221 25 0.626221C11.5387 0.626221 0.625 11.5399 0.625 25.0012C0.625 38.4625 11.5387 49.3762 25 49.3762C38.4613 49.3762 49.375 38.4625 49.375 25.0012ZM23.125 34.3868L30.5758 26.8762H13.0469V23.1262H30.5758L23.125 15.6157L25.7863 12.9743L37.7195 25.0012L25.7852 37.0282L23.125 34.3868Z"
+                                    fill="#B9B9B9" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wallpaper page-section">
+        <div class="container">
+            <div class="wallpaper__inner">
+                <div class="wallpaper__slider">
+                    <div class="wallpaper__item">
+                        <img class="wallpaper__img" src="img/wallpaper.png" alt="">
+                        <span class="wallpaper__location">Анюйский национальный парк</span>
+                    </div>
+                    <div class="wallpaper__item">
+                        <img class="wallpaper__img" src="img/new1.jpg" alt="">
+                        <span class="wallpaper__location">Анюйский национальный парк</span>
+                    </div>
+                    <div class="wallpaper__item">
+                        <img class="wallpaper__img" src="img/new2.jpg" alt="">
+                        <span class="wallpaper__location">Анюйский национальный парк</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services page-section">
+        <div class="services__inner">
+            <div class="container">
+                <h2 class="title">
+                    Наши услуги
+                </h2>
+                <div class="services__wrapper">
+                    <div class="services__info">
+                        <h3 class="subtitle">
+                            Отдых в радость
+                        </h3>
+                        <p class="services__text">
+                            Воспользуйтесь уникальной возможностью вживую понаблюдать за одной из самых
+                            грациозных пород
+                            лошадей, погулять по загону с пятнистыми оленями, увидеть следы амурского тигра.
+                        </p>
+                        <p class="services__text">
+                            Подышать чистейшим воздухом тайги, оздоровиться в русской бане на дровах с купелью
+                            запаренной пихты и таёжными травами, поплавать на лодке, порыбачить. Все это и
+                            многое другое
+                            ждёт вас в комплексе “Дё Морин”
+                        </p>
+                        <a class="booking-btn services__booking services__booking--desctop" href="#">
+                            Забронировать домик
+                        </a>
+                    </div>
+                    <div class="services__slider">
+                        <div class="services__slider-item">
+                            <img class="services__slider-item-img" src="img/service1.jpg" alt="">
+                            <div class="services__slider-item-title">Прогулки на снегоходах</div>
+                            <div class="services__slider-item-desc">В зимний период возможность погонять по просторам.
+                            </div>
+                        </div>
+                        <div class="services__slider-item">
+                            <img class="services__slider-item-img" src="img/service2.jpg" alt="">
+                            <div class="services__slider-item-title">Туры на квадроциклах</div>
+                            <div class="services__slider-item-desc">Удивительная возможность посмотреть животный мир.
+                            </div>
+                        </div>
+                        <div class="services__slider-item">
+                            <img class="services__slider-item-img" src="img/service3.jpg" alt="">
+                            <div class="services__slider-item-title">Русская баня на дровах</div>
+                            <div class="services__slider-item-desc">Отличный способ оздоровления и поднятия настроения.
+                            </div>
+                        </div>
+                        <div class="services__slider-item">
+                            <img class="services__slider-item-img" src="img/service4.jpg" alt="">
+                            <div class="services__slider-item-title">Купель с запаренной пихтой</div>
+                            <div class="services__slider-item-desc">Расслабьтесь в купели из пихты и таёжных трав.</div>
+                        </div>
+                    </div>
+                    <div class="services__slider-arr slider-nav">
+                        <a href="#" class="services__link">Смотреть все услуги</a>
+                        <div class="slider-nav__prev">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.625002 24.9988C0.625001 38.4601 11.5387 49.3738 25 49.3738C38.4613 49.3738 49.375 38.4601 49.375 24.9988C49.375 11.5375 38.4613 0.623782 25 0.623781C11.5387 0.62378 0.625003 11.5374 0.625002 24.9988ZM26.875 15.6132L19.4242 23.1238L36.9531 23.1238L36.9531 26.8738L19.4242 26.8738L26.875 34.3843L24.2137 37.0257L12.2805 24.9988L24.2148 12.9718L26.875 15.6132Z"
+                                    fill="#B9B9B9" />
+                            </svg>
+                        </div>
+                        <div class="slider-nav__next">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M49.375 25.0012C49.375 11.5399 38.4613 0.626221 25 0.626221C11.5387 0.626221 0.625 11.5399 0.625 25.0012C0.625 38.4625 11.5387 49.3762 25 49.3762C38.4613 49.3762 49.375 38.4625 49.375 25.0012ZM23.125 34.3868L30.5758 26.8762H13.0469V23.1262H30.5758L23.125 15.6157L25.7863 12.9743L37.7195 25.0012L25.7852 37.0282L23.125 34.3868Z"
+                                    fill="#B9B9B9" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="booking-btn services__booking services__booking--mobile" href="#">
+                    Забронировать домик
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery page-section">
+        <div class="container">
+            <div class="gallery__inner">
+                <div class="title">Галерея</div>
+                <div class="gallery__body">
+                    <div class="gallery__wrap">
+                        <div class="gallery__block">
+                            <a href="img/gal-1.jpg" class="gal-1" data-fancybox="gallery">
+                                <img src="img/gal-1.jpg" alt="">
+                            </a>
+                            <a href="img/gal-2.jpg" class="gal-2" data-fancybox="gallery">
+                                <img src="img/gal-2.jpg" alt="">
+                            </a>
+                            <a href="img/gal-3.jpg" class="gal-3" data-fancybox="gallery">
+                                <img src="img/gal-3.jpg" alt="">
+                            </a>
+                            <a href="img/gal-4.jpg" class="gal-4" data-fancybox="gallery">
+                                <img src="img/gal-4.jpg" alt="">
+                            </a>
+                            <a href="img/gal-5.jpg" class="gal-5" data-fancybox="gallery">
+                                <img src="img/gal-5.jpg" alt="">
+                            </a>
+                            <a href="img/gal-6.jpg" class="gal-6" data-fancybox="gallery">
+                                <img src="img/gal-6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="gallery__link">Смотреть все фотографии</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- @@include('parts/footer.html') -->
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <a class="navbar__logo-link" href="/">
+                            <div class="navbar__logo-text">
+                                Туристическая база Дё Морин
+                            </div>
+                        </a>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    О Дё Морин
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__item-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="navbar__lang">
+                        <div class="lang-box">
+                            <div class="lang-box__current">
+                                Rus
+                            </div>
+                            <div class="lang-box__dropdown">
+                                <a class="lang-box__link" href="#">
+                                    Eng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar__phone-block">
+                        <div class="navbar__phone">
+                            <a class="navbar__phone-link" href="tel:+79622212668">
+                                +7 (962) 221-26-68
+                            </a>
+                        </div>
+                        <div class="navbar__recall">
+                            <a class="navbar__recall-link" href="javascript:;" data-fancybox data-src="#modal"
+                                data-options='{"smallBtn" : false, "toolbar": false}'>
+                                Заказать звонок
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Добавить в футтер страницу "Правила оплаты услуг" данные взять из файла "Приложение 4"
+                9. Добавить в футтер страницу "Политика конфиденциальности"
+                10. Добавить в футтер ссылку "Разработка и сопровождение- BRINEY" -->
+                <div class="footer__bottom">
+                    <div class="footer__bottom-left">
+                        <div class="footer__bottom-item">
+                            <a href="#"> Правила оплаты услуг </a>
+                        </div>
+                        <div class="footer__bottom-item">
+                            <a href="#"> Политика конфиденциальности </a>
+                        </div>
+                    </div>
+                    <div class="footer__bottom-right">
+                        <div class="footer__bottom-item">
+                            Разработка и сопровождение - <a href="#">BRINEY</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="booking-fix">
+        <a class="booking-fix__link" href="#"><span>Бронирование</span></a>
+    </div>
+
+    <div style="display: none;" id="modal" class="popup-form">
+        <div class="modal-close" data-fancybox-close=""></div>
+        <div class="modal">
+
+            <h2 class="modal__title" data-selectable="true">
+                Получить консультацию
+            </h2>
+
+            <div class="modal__form-inner" data-selectable="true">
+                <form action="" class="form">
+                    <div class="form__field">
+                        <label class="form__field-label" for="name">Ваше имя</label>
+                        <input class="form__input" type="text" id="name" placeholder="Артем Волков">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="phone">Ваш телефон</label>
+                        <input class="form__input" type="tel" id="phone" placeholder="+7 (999) 999-99-99">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label">&nbsp;</label>
+                        <button class="booking-btn form__button">Заказать звонок</button>
+                    </div>
+                    <p class="modal__form-info">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked class="checkbox" name="checkbok-1" id="checkbok-1">
+                            <span class="check-icon"></span>
+                            <span class="check-text">Согласен с <a href="#" target="_blank">договором</a> на обработку
+                                персональных данных.</span>
+                        </label>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b9cf0523-d750-4294-8f53-b40e67b0a1e0&lang=ru_RU"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
